@@ -1,0 +1,20 @@
+{
+    "name": "lingxiang/im-service-components",
+    "description": "service components",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lingxiang",
+            "email": "lingxiang@han-zi.cn"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "ServiceComponents\\":"src"
+        }
+
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
