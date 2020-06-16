@@ -101,4 +101,12 @@ interface GroupServiceInterface
      * @return mixed
      */
     public function updateGroupByCondition($attr, $condition, $single = false);
+
+    /**
+     * 根据条件查询群组成员信息
+     * @param $where
+     * @param $single
+     * @return mixed
+     */
+    public function getNewGroupMemberByCondition($where, $single = false);
 }

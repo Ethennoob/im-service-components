@@ -54,5 +54,13 @@ interface RecordServiceInterface
      */
     public function newGroupRecord($data);
 
+    /**
+     * 获取某个用户的群聊记录
+     * @param $user_id
+     * @param $limit 条数
+     * @return mixed
+     */
+    public function getGroupRecordByUIdLimit($user_id, $limit);
+
 
 }
