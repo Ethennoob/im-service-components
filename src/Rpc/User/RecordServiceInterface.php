@@ -62,5 +62,21 @@ interface RecordServiceInterface
      */
     public function getGroupRecordByUIdLimit($user_id, $limit);
 
+    /**
+     * 根据条件查询单聊信息
+     * @param $where
+     * @param $single
+     * @return mixed
+     */
+    public function getUserRecordByCondition($where, $single);
+
+    /**
+     * 根据条件查询群聊信息
+     * @param $where
+     * @param $single
+     * @return mixed
+     */
+    public function getGroupRecordByCondition($where, $single);
+
 
 }
