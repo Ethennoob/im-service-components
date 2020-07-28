@@ -102,4 +102,15 @@ interface UserServiceInterface
      */
     public function cloudLogin($appid, $identifier, $token);
 
+    /**
+     * 分页搜索用户
+     * @param $user_id
+     * @param $appid
+     * @param $value
+     * @param $page
+     * @param $limit
+     * @return mixed
+     */
+    public function searchUserPaginate($user_id, $appid, $value, $page, $limit);
+
 }
