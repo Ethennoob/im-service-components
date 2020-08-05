@@ -113,4 +113,11 @@ interface UserServiceInterface
      */
     public function searchUserPaginate($user_id, $appid, $value, $page, $limit);
 
+    /**
+     * 根据条件数组查询用户列表
+     * @param $wheres
+     * @return mixed
+     */
+    public function getUserListByWhere($wheres);
+
 }

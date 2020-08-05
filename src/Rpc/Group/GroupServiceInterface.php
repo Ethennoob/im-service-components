@@ -109,4 +109,15 @@ interface GroupServiceInterface
      * @return mixed
      */
     public function getNewGroupMemberByCondition($where, $single = false);
+
+    /**
+     * 通过好友创建群聊
+     * @param $data
+     * @param $number
+     * @param $userNumber
+     * @param $user_id
+     * @param $member_data
+     * @return mixed
+     */
+    public function createGroupByUser($data,$number ,$userNumber, $user_id, $member_data);
 }
