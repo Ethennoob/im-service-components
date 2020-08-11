@@ -31,6 +31,10 @@ use Swoft\Rpc\Server\Bean\Annotation\Service;
  * @method ResultInterface deferSetGroupFds($gnumber,$fd);
  * @method ResultInterface deferGetGroupFdsLen($gnumber);
  * @method ResultInterface deferGetGroupFd($gnumber, $index);
+ * @method ResultInterface deferSetNumberFds($number,$fd);
+ * @method ResultInterface deferGetNumberFdsLen($number);
+ * @method ResultInterface deferGetNumberAllFd($number, $index);
+ * @method ResultInterface deferDelNumberFd($number, $fd);
  * @method ResultInterface deferDelGroupFd($gnumber, $fd);
  * @method ResultInterface deferDelTokenUser($token);
  * @method ResultInterface deferDelNumberUserOtherInfo($number);
@@ -100,7 +104,15 @@ interface UserCacheInterface
 
     public  function getGroupFd($gnumber, $index);
 
+    public  function setNumberFds($number, $fd);
+
+    public  function getNumberFdsLen($number);
+
+    public  function getNumberAllFd($number, $index);
+
     public  function delGroupFd($gnumber, $fd);
+
+    public  function delNumberFd($number, $fd);
     /*
      * 销毁
      */
