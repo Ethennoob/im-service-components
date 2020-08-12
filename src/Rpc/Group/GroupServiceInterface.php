@@ -120,4 +120,11 @@ interface GroupServiceInterface
      * @return mixed
      */
     public function createGroupByUser($data,$number ,$userNumber, $user_id, $member_data);
+
+    /**
+     * 批量创建群成员
+     * @param $member_data
+     * @return mixed
+     */
+    public function newGroupMemberBatch($group_id, $member_data);
 }
